@@ -8,7 +8,8 @@ const App = () => {
     <BrowserRouter>
       {/* <AppContext.provider value={{}}> */}
         <Switch>
-          <Route path="/" render={(props) => <Home />} />
+        <Route path="/" render={(props) => <Home />} />
+        <Route path="/home" render={(props) => <Home />} />
         </Switch>
       {/* </AppContext.provider> */}
     </BrowserRouter>

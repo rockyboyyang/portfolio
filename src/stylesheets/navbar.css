@@ -1,0 +1,28 @@
+.navbar {
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    display: grid;
+    grid-template-columns: 1fr 3fr 6fr;
+    /* border-bottom: 1px solid rgba(255,255,255,.16); */
+    box-shadow: 0 2px 12px 0 rgba(255,255,255,.16);
+}
+
+.tabs-container {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.tabs {
+    cursor: pointer;
+}
+
+.tabs:hover {
+    cursor: pointer;
+    color: rgb(154, 255, 154);
+    transition: .25s;
+}

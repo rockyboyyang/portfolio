@@ -2,8 +2,15 @@
 .splash-page {
     height: 100%;
     width: 100%;
-    background-color: #a4508b;
-    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction-container {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +28,9 @@
     justify-content: center;
     align-items: center;
     font-weight: 700;
+    opacity: 0;
 }
+
 
 .go-to-home-button:hover {
     cursor: pointer;
@@ -30,7 +39,7 @@
     transition: .5s;
 }
 
-.splash-page > p {
+.introduction-container > p {
     margin: 5px;
 }
 
@@ -58,6 +67,15 @@
   animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+.go-to-home-button > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    font-size: medium;    
 }
 
 @keyframes shrinking {

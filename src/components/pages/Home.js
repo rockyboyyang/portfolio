@@ -4,7 +4,9 @@ import { AppContext } from '../../context/AppContext'
 
 const Home = () => {
     return (
-        <h1>Hello World</h1>
+        <div className="splash-page">
+            
+        </div>
     );
 }
 

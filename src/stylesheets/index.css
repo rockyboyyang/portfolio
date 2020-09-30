@@ -1,0 +1,13 @@
+/* TODO Add site wide styles */
+@import 'home.css';
+
+
+html,
+body,
+#root,
+.view-body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    font-family: Verdana,Helvetica,Arial,sans-serif;
+}

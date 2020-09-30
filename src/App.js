@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Switch, useHistory, Redirect } from "react-router-dom";
+import { AppContext } from './context/AppContext'
+import Home from './components/pages/Home'
 
-function App() {
+const App = () => {
   return (
-    <h1>Hello world!</h1>
+    <BrowserRouter>
+      {/* <AppContext.provider value={{}}> */}
+        <Switch>
+          <Route path="/" render={(props) => <Home />} />
+          <Route path="/Home" render={(props) => <Home />} />
+        </Switch>
+      {/* </AppContext.provider> */}
+    </BrowserRouter>
   );
 }
 

@@ -1,7 +1,9 @@
 /* TODO Add site wide styles */
 @import 'home.css';
+@import 'about.css';
 @import 'transitions.css';
 @import 'navbar.css';
+@import 'footer.css';
 
 html,
 body,
@@ -19,5 +21,5 @@ body,
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 14fr;
+    grid-template-rows: 1fr 12fr 2fr;
 }

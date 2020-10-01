@@ -1,0 +1,17 @@
+.about-middle-body {
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+}
+
+.middle-body-header {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline {
+    width: 4%;
+    border: white 1px solid;
+}

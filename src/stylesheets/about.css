@@ -9,9 +9,53 @@
     color: white;
     justify-content: center;
     align-items: center;
+    grid-row: 1;
+}
+
+.picture-description-container {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+}
+
+.description-outer-container {
+    height: 100%;
+    width: 100%;
+    grid-column: 2;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.description-inner-container {
+    width: 90%;
+    height: 50%;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 10px 10px;
+}
+
+#description-text {
+    color: rgba(0, 0, 0, 0.504);
 }
 
 .underline {
     width: 4%;
     border: white 1px solid;
+}
+
+#profile-pic {
+    height: 50%;
+    width: 40%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px 2px rgb(159, 159, 159);
 }

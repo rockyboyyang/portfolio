@@ -10,7 +10,9 @@ const Navbar = () => {
 
     const redirect = (e) => {
         let id = e.target.id;
-        console.log(id)
+        if (id === 'about-tab') history.push('./about')
+        if (id === 'skills-tab') history.push('./skills')
+        if (id === 'projects-tab') history.push('./projects')
     }
 
     return (

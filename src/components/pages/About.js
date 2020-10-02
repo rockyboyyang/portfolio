@@ -9,6 +9,18 @@ const About = () => {
     let history = useHistory()
 
     useEffect(() => {
+        let pictureContainer = document.querySelector('.picture-container')
+        pictureContainer.style.animation = "entering_from_bottom 1s"
+        pictureContainer.style.transform = "translateY(0%)"
+
+        let descriptionContainer = document.querySelector('.description-outer-container')
+        descriptionContainer.style.animation = "entering_from_top 1s"
+        descriptionContainer.style.transform = "translateY(0%)"
+
+        let header = document.querySelector('.middle-body-header')
+        header.style.animation = "entering_from_left 1s"
+        header.style.transform = "translateX(0%)"
+
     }, [])
 
 
@@ -16,9 +28,9 @@ const About = () => {
         <div className="about-page main-body">
             <Navbar />
             <div className="middle-body about-middle-body">
-                <div className="middle-body-header">
+                <div className="middle-body-header about-middle">
                     <h1>About</h1>
-                    <div className="underline"></div>
+                    <div className="underline-about"></div>
                 </div>
                 <div className="picture-description-container">
                     <div className='picture-container'>

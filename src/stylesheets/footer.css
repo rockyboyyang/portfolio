@@ -8,6 +8,7 @@
     box-shadow: 0 2px 12px 0 rgba(255,255,255,.16);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    transform: translateX(100%);
 }
 
 .fa {

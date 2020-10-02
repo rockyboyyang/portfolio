@@ -4,11 +4,13 @@
     width: 100%;
     height: 100%;
     background-color: #b8c6db;
-    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    /* background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); */
 }
 
 .skills-middle {
     color: #a4508b;
+    transform: translateX(100%);
 }
 
 .skills-outer-container {
@@ -38,7 +40,24 @@
     border: #a4508b 1px solid;
 }
 
-img {
+.css-logo-container,
+.express-logo-container,
+.flask-logo-container,
+.heroku-logo-container,
+.html-logo-container,
+.sequelize-logo-container {
+    transform: translateX(-1000%);
+}
+
+.javascript-logo-container,
+.mysql-logo-container,
+.postgresql-logo-container,
+.python-logo-container,
+.react-logo-container {
+    transform: translateX(1000%);
+}
+
+.skills-inner-container img {
     height: 75%;
     width: 65%;
 }

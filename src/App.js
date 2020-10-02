@@ -7,16 +7,20 @@ import Skills from './components/pages/Skills'
 import About from './components/pages/About'
 
 const App = () => {
+
+  const [currentPage, setCurrentPage] = useState('')
+  const [openedPortfolio, setOpenedPortfolio] = useState(false)
+
   return (
     <BrowserRouter>
-      {/* <AppContext.provider value={{}}> */}
+      <AppContext.Provider value={{ currentPage, setCurrentPage, openedPortfolio, setOpenedPortfolio}}>
         <Switch>
         <Route exact path="/" render={(props) => <Splash />} />
         <Route path="/Home" render={(props) => <Home />} />
         <Route path="/about" render={(props) => <About />} />
         <Route path="/skills" render={(props) => <Skills />} />
         </Switch>
-      {/* </AppContext.provider> */}
+      </AppContext.Provider>
     </BrowserRouter>
   );
 }

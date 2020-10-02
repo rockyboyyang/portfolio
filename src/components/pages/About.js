@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { BrowserRouter, Route, Switch, useHistory, Redirect } from "react-router-dom";
 import { AppContext } from '../../context/AppContext'
 import Navbar from '../Navbar'
@@ -7,8 +7,10 @@ import profilePic from '../../assets/images/profile-pic2.jpg'
 
 const About = () => {
     let history = useHistory()
+    const { currentPage, setCurrentPage, openedPortfolio, setOpenedPortfolio } = useContext(AppContext)
 
     useEffect(() => {
+        setCurrentPage('about')
         let pictureContainer = document.querySelector('.picture-container')
         pictureContainer.style.animation = "entering_from_bottom 1s"
         pictureContainer.style.transform = "translateY(0%)"
@@ -17,9 +19,19 @@ const About = () => {
         descriptionContainer.style.animation = "entering_from_top 1s"
         descriptionContainer.style.transform = "translateY(0%)"
 
-        let header = document.querySelector('.middle-body-header')
+        let header = document.querySelector('.about-middle')
         header.style.animation = "entering_from_left 1s"
         header.style.transform = "translateX(0%)"
+
+        let navbar = document.querySelector('.navbar')
+        let footer = document.querySelector('.footer')
+        if(openedPortfolio === false) {
+            navbar.style.animation = "entering_from_right 1s"
+            footer.style.animation = "entering_from_right 1s"
+        }
+        navbar.style.transform = "translateX(0%)"
+        footer.style.transform = "translateX(0%)"
+        setOpenedPortfolio(true)
 
     }, [])
 

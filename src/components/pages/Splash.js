@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { BrowserRouter, Route, Switch, useHistory, Redirect } from "react-router-dom";
 import { AppContext } from '../../context/AppContext'
 
 const Splash = () => {
     let history = useHistory()
+    const { currentPage, setCurrentPage, openedPortfolio, setOpenedPortfolio } = useContext(AppContext)
 
     useEffect(() => {
         setTimeout(() => {
@@ -15,7 +16,6 @@ const Splash = () => {
     const transition = () => {
         let element = document.querySelector('.introduction-container')
         element.className += " transition-fade"
-        console.log(element)
         setTimeout(() => {
             history.push('./about')
         }, 2000)

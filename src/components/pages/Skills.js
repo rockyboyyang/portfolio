@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { BrowserRouter, Route, Switch, useHistory, Redirect } from "react-router-dom";
 import { AppContext } from '../../context/AppContext'
 import Navbar from '../Navbar'
@@ -17,8 +17,70 @@ import sequelizeLogo from '../../assets/images/sequelize.png'
 
 const Skills = () => {
     let history = useHistory()
+    const { currentPage, setCurrentPage, openedPortfolio, setOpenedPortfolio } = useContext(AppContext)
 
     useEffect(() => {
+        setCurrentPage('skills')
+
+        let cssLogoContainer = document.querySelector('.css-logo-container')
+        cssLogoContainer.style.animation = "entering_from_far_left 1s"
+        cssLogoContainer.style.transform = "translateX(0%)"
+
+        let expressLogoContainer = document.querySelector('.express-logo-container')
+        expressLogoContainer.style.animation = "entering_from_far_left 1s"
+        expressLogoContainer.style.transform = "translateX(0%)"
+
+        let flaskLogoContainer = document.querySelector('.flask-logo-container')
+        flaskLogoContainer.style.animation = "entering_from_far_left 1s"
+        flaskLogoContainer.style.transform = "translateX(0%)"
+
+        let herokuLogoContainer = document.querySelector('.heroku-logo-container')
+        herokuLogoContainer.style.animation = "entering_from_far_left 1s"
+        herokuLogoContainer.style.transform = "translateX(0%)"
+
+        let htmlLogoContainer = document.querySelector('.html-logo-container')
+        htmlLogoContainer.style.animation = "entering_from_far_left 1s"
+        htmlLogoContainer.style.transform = "translateX(0%)"
+
+        let sequelizeLogoContainer = document.querySelector('.sequelize-logo-container')
+        sequelizeLogoContainer.style.animation = "entering_from_far_left 1s"
+        sequelizeLogoContainer.style.transform = "translateX(0%)"
+
+        let javascriptLogoContainer = document.querySelector('.javascript-logo-container')
+        javascriptLogoContainer.style.animation = "entering_from_far_right 1s"
+        javascriptLogoContainer.style.transform = "translateX(0%)"
+
+        let mysqlLogoContainer = document.querySelector('.mysql-logo-container')
+        mysqlLogoContainer.style.animation = "entering_from_far_right 1s"
+        mysqlLogoContainer.style.transform = "translateX(0%)"
+
+        let postgresqlLogoContainer = document.querySelector('.postgresql-logo-container')
+        postgresqlLogoContainer.style.animation = "entering_from_far_right 1s"
+        postgresqlLogoContainer.style.transform = "translateX(0%)"
+
+        let pythonLogoContainer = document.querySelector('.python-logo-container')
+        pythonLogoContainer.style.animation = "entering_from_far_right 1s"
+        pythonLogoContainer.style.transform = "translateX(0%)"
+
+        let reactLogoContainer = document.querySelector('.react-logo-container')
+        reactLogoContainer.style.animation = "entering_from_far_right 1s"
+        reactLogoContainer.style.transform = "translateX(0%)"
+
+        let header = document.querySelector('.skills-middle')
+        header.style.animation = "entering_from_right 1s"
+        header.style.transform = "translateX(0%)"
+
+    
+
+        let navbar = document.querySelector('.navbar')
+        let footer = document.querySelector('.footer')
+        if (openedPortfolio === false) {
+            navbar.style.animation = "entering_from_right 1s"
+            footer.style.animation = "entering_from_right 1s"
+        }
+        navbar.style.transform = "translateX(0%)"
+        footer.style.transform = "translateX(0%)"
+        setOpenedPortfolio(true)
     }, [])
 
 

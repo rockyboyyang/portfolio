@@ -16,12 +16,27 @@ const Splash = () => {
     const transition = () => {
         let element = document.querySelector('.introduction-container')
         element.className += " transition-fade"
-
+        // element.style.display = "none"
         let background = document.querySelector('.splash-page')
-        background.style.animation = "change_from_black_to_purple 2.5s"
+        // background.style.animation = "change_from_black_to_purple 2.5s"
+        let splitting = document.querySelector('.splitting-containers')
         setTimeout(() => {
-            history.push('./about')
+            splitting.style.display = "grid"
+        }, 1000)
+
+        setTimeout(() => {
+            let left = document.querySelector('.left-container')
+            let right = document.querySelector('.right-container')
+            left.style.animation = "exiting_through_far_left 3s"
+            right.style.animation = "exiting_through_far_right 3s"
+            left.style.transform = "translateX(1000%)"
+            right.style.transform = "translateX(-1000%)"
         }, 2000)
+
+        setTimeout(() => {
+            splitting.style.display = "none"
+            history.push('./about')
+        }, 3000)
     }
 
     return (
@@ -30,6 +45,10 @@ const Splash = () => {
                 <p className="introduction-sentence first-line">Hello, my name is Rocky Yang</p>
                 <p className="introduction-sentence second-line">I am the developer YOU are looking for</p>
                 <div className="go-to-home-button" onClick={transition}><p>Portfolio</p></div>
+            </div>
+            <div className="splitting-containers">
+                <div className="left-container"></div>
+                <div className="right-container"></div>
             </div>
         </div>
     );

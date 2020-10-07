@@ -40,6 +40,30 @@
     transition: .5s;
 }
 
+.splitting-containers {
+    height: 100%;
+    width: 100%;
+    /* background-color: #000000; */
+    /* background-color: white; */
+    background-color: #a4508b;
+    position: absolute;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+}
+
+.splitting-containers > div {
+    height: 100%;
+    width: 100%;
+    /* background-color: violet; */
+    background-color: #000000;
+
+}
+
+.left-container,
+.right-container {
+  transform:  translateX(0%)
+}
+
 .introduction-container > p {
     margin: 5px;
 }

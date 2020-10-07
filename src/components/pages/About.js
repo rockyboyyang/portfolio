@@ -19,6 +19,10 @@ const About = () => {
         descriptionContainer.style.animation = "entering_from_top 1s"
         descriptionContainer.style.transform = "translateY(0%)"
 
+        let descriptionAndPictureContainer = document.querySelector('.picture-description-container')
+        descriptionAndPictureContainer.style.animation = "entering_from_right 1s"
+        descriptionAndPictureContainer.style.transform = "translateX(0%)"
+
         let header = document.querySelector('.about-middle')
         header.style.animation = "entering_from_left 1s"
         header.style.transform = "translateX(0%)"
@@ -27,7 +31,7 @@ const About = () => {
         let footer = document.querySelector('.footer')
         if(openedPortfolio === false) {
             navbar.style.animation = "entering_from_right 1s"
-            footer.style.animation = "entering_from_right 1s"
+            footer.style.animation = "entering_from_left 1s"
         }
         navbar.style.transform = "translateX(0%)"
         footer.style.transform = "translateX(0%)"

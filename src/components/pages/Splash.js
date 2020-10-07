@@ -16,6 +16,9 @@ const Splash = () => {
     const transition = () => {
         let element = document.querySelector('.introduction-container')
         element.className += " transition-fade"
+
+        let background = document.querySelector('.splash-page')
+        background.style.animation = "change_from_black_to_purple 2.5s"
         setTimeout(() => {
             history.push('./about')
         }, 2000)

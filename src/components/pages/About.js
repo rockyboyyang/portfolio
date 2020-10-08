@@ -44,6 +44,19 @@ const About = () => {
         <div className="about-page main-body">
             <Navbar />
             <div className="middle-body about-middle-body">
+                <div className="home-page-header-container">
+                    {/* <h1 className="introduction">Welcome to my Portfolio</h1> */}
+                    {/* Welcome to my Portfolio */}
+                    <div className="home-page-header">
+                        <div className="home-page-header-low-black">
+                        </div>
+                    </div>
+                    <div className="unblurred-text">
+                        <h1 className="introduction">Welcome</h1>
+                        <h1 className="introduction">to my</h1>
+                        <h1 className="introduction">Portfolio</h1>
+                    </div> 
+                </div>
                 <div className="middle-body-header about-middle">
                     <h1>About</h1>
                     <div className="underline-about"></div>

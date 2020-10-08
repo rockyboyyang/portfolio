@@ -19,8 +19,8 @@ const App = () => {
         <Route exact path="/" render={(props) => <Splash />} />
         <Route path="/Home" render={(props) => <Home />} />
         <Route path="/about" render={(props) => <About />} />
-          <Route path="/skills" render={(props) => <Skills />} />
-          <Route path="/projects" render={(props) => <Projects />} />
+        <Route path="/skills" render={(props) => <Skills />} />
+        <Route path="/projects" render={(props) => <Projects />} />
         </Switch>
       </AppContext.Provider>
     </BrowserRouter>

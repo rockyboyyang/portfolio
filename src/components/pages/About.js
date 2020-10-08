@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { BrowserRouter, Route, Switch, useHistory, Redirect } from "react-router-dom";
 import { AppContext } from '../../context/AppContext'
 import Navbar from '../Navbar'
+import Skill from '../Skill'
 import Footer from '../Footer'
 import profilePic from '../../assets/images/profile-pic2.jpg'
 
@@ -67,15 +68,24 @@ const About = () => {
                     </div>
                     <div className='description-outer-container'>
                         <div className='description-inner-container'>
-                            {currentPage === 'about' ? (
-                                <>
-                                    <h2>Who am I?</h2>
-                                    <p id="description-text">I’m a passionate software developer with the innovative and creative mindset of an entrepreneur. I am always looking forward to any challenge. I'm an enthusiastic teammate and always bring a positive atmosphere wherever I go. I am forward-thinking, and I love creating new ideas to showcase my skillset. Programming has been my outlet for problem-solving and creative expression. Languages that I love are Javascript and Python. I also have great experience working in jsNode, React, SQL, SQLAlchemy, Postgresql, Flask, HTML5, CSS3, Express, and Git. When my programming cape is off, I like to play video games and spend time with friends and family.</p>
-                                </>
-                            ) : (
-                                <>
-                                </>
-                            )}
+                            <h2>Who am I?</h2>
+                            <p id="description-text">I’m a passionate software developer with the innovative and creative mindset of an entrepreneur. I am always looking forward to any challenge. I'm an enthusiastic teammate and always bring a positive atmosphere wherever I go. I am forward-thinking, and I love creating new ideas to showcase my skillset. Programming has been my outlet for problem-solving and creative expression. Languages that I love are Javascript and Python. I also have great experience working in jsNode, React, SQL, SQLAlchemy, Postgresql, Flask, HTML5, CSS3, Express, and Git. When my programming cape is off, I like to play video games and spend time with friends and family.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="skills-description-container">
+                    <div className="extra-description-container"></div>
+                    <div className="skills-outer-container">
+                        <div className="skills-inner-container">
+                            <Skill skill="JavaScript" percentage={85}/>
+                            <Skill skill="CSS" percentage={80}/>
+                            <Skill skill="HTML" percentage={80}/>
+                            <Skill skill="Python" percentage={65}/>
+                            <Skill skill="React" percentage={80}/>
+                            <Skill skill="Git" percentage={80}/>
+                            <Skill skill="Flask" percentage={70}/>
+                            <Skill skill="Express" percentage={65}/>
+                            <Skill skill="SQL" percentage={80}/>
                         </div>
                     </div>
                 </div>

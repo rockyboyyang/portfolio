@@ -1,65 +1,189 @@
-.skills-middle-body {
+
+/* .skills-middle-body {
     display: grid;
     grid-template-rows: 1fr 7fr;
     width: 100%;
     height: 100%;
     background-color: #b8c6db;
-    /* background-color: #b8c6db;
-    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); */
-}
+} */
 
-.skills-middle {
+/* .skills-middle {
     color: #a4508b;
     transform: translateX(100%);
-}
+} */
 
-.skills-outer-container {
+/* .skills-outer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-}
+} */
 
-.skills-inner-container {
+/* .skills-inner-container {
     height: 75%;
     width: 75%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
+} */
 
-.skills-inner-container > div {
+/* .skills-inner-container > div {
     display: flex;
     justify-content: center;
     align-items: center;
     max-height: 100%;
     max-width: 100%;
-}
+} */
 
-.underline-skills {
+/* .underline-skills {
     width: 4.5%;
     border: #a4508b 1px solid;
-}
+} */
 
-.css-logo-container,
+/* .css-logo-container,
 .express-logo-container,
 .flask-logo-container,
 .heroku-logo-container,
 .html-logo-container,
 .sequelize-logo-container {
     transform: translateX(-1000%);
-}
+} */
 
-.javascript-logo-container,
+/* .javascript-logo-container,
 .mysql-logo-container,
 .postgresql-logo-container,
 .python-logo-container,
 .react-logo-container {
     transform: translateX(1000%);
-}
+} */
 
-.skills-inner-container img {
+/* .skills-inner-container img {
     height: 75%;
     width: 65%;
+} */
+
+.skills-description-container {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills-outer-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-inner-container {
+    height: 60%;
+    width: 70%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* background-color: black; */
+}
+
+.skill-div {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+}
+
+.skill-name-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.skill-outer-inner-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.skill-outer {
+    height: 30%;
+    width: 75%;
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.skill-inner-JavaScript {
+    height: 100%;
+    width: 85%;
+    background-color: #485461;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.skill-inner-CSS {
+    height: 100%;
+    width: 80%;
+    background-color: #485461;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.skill-inner-HTML {
+    height: 100%;
+    width: 80%;
+    background-color: #485461;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.skill-inner-Python {
+    height: 100%;
+    width: 65%;
+    background-color: #485461;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.skill-inner-React {
+    height: 100%;
+    width: 80%;
+    background-color: #485461;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.skill-inner-Git {
+    height: 100%;
+    width: 80%;
+    background-color: #485461;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.skill-inner-Flask {
+    height: 100%;
+    width: 70%;
+    background-color: #485461;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.skill-inner-Express {
+    height: 100%;
+    width: 65%;
+    background-color: #485461;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.skill-inner-SQL {
+    height: 100%;
+    width: 80%;
+    background-color: #485461;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }

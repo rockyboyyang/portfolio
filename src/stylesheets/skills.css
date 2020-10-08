@@ -88,7 +88,7 @@
 
 .skill-div {
     display: grid;
-    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 .skill-name-div {
@@ -105,6 +105,10 @@
     display: flex;
     /* justify-content: center; */
     align-items: center;
+}
+
+.skill-outer-inner-container > span {
+    margin-left: 10px;
 }
 
 .skill-outer {

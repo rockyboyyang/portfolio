@@ -74,7 +74,9 @@ const About = () => {
                     </div>
                 </div>
                 <div className="skills-description-container">
-                    <div className="extra-description-container"></div>
+                    <div className="extra-description-container">
+                        
+                    </div>
                     <div className="skills-outer-container">
                         <div className="skills-inner-container">
                             <Skill skill="JavaScript" percentage={85}/>

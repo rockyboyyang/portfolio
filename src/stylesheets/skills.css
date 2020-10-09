@@ -65,7 +65,7 @@
 
 .skills-description-container {
     width: 100%;
-    height: 800px;
+    height: 700px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -74,12 +74,13 @@
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .skills-inner-container {
-    height: 60%;
+    height: 70%;
     width: 70%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -190,4 +191,18 @@
     background-color: #485461;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+.extra-description-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-container {
+    /* background-color: red; */
+    height: 80%;
+    width: 50%;
 }

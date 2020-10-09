@@ -1,3 +1,113 @@
-.projects-page {
+.projects-middle {
+    width: 100%;
+    height: 150px;
+    color: #b8c6db;
+}
+
+.projects-body {
+    width: 100%;
+    height: 2000px;
+    display: grid;
+    grid-template-rows: 6fr 1fr 6fr 1fr 6fr 1fr 6fr;
+}
+
+.projects-div-container {
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    color: #b8c6db;
+}
+
+.underline-project {
+    width: 4%;
+    border: #b8c6db 1px solid;
+}
+
+.project-tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.break-div {
+    height: 100%;
+    width: 100%;
+}
+
+
+.chess-tab {
+    height: 100%;
+    width: 100%;
+    grid-row: 1;
+}
+
+.pokechampions-tab {
+    height: 100%;
+    width: 100%;
+    grid-row: 3;
+}
+
+.carl-tab {
+    height: 100%;
+    width: 100%;
+    grid-row: 5;
+}
+
+.swipefair-tab {
+    height: 100%;
+    width: 100%;
+    grid-row: 7;
+
+}
+
+.project-video {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-description {
+    width: 80%;
+    height: 100%;
+    color: #b8c6db;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.live-github-button {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+}
+
+.button {
+    border: white 1px solid;
+    border-radius: 20px;
+    height: 100%;
+    width: 30%;
+    /* margin: 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-tab {
     
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }

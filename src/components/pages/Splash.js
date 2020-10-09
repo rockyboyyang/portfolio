@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { BrowserRouter, Route, Switch, useHistory, Redirect } from "react-router-dom";
-import { AppContext } from '../../context/AppContext'
+import React, { useEffect } from 'react';
+import { useHistory} from "react-router-dom";
 
 const Splash = () => {
     let history = useHistory()
-    const { currentPage, setCurrentPage, openedPortfolio, setOpenedPortfolio } = useContext(AppContext)
 
     useEffect(() => {
         setTimeout(() => {
@@ -17,25 +15,8 @@ const Splash = () => {
     const transition = () => {
         let element = document.querySelector('.introduction-container')
         element.className += " transition-fade"
-        // element.style.display = "none"
-        // let background = document.querySelector('.splash-page')
-        // background.style.animation = "change_from_black_to_purple 2.5s"
-        // let splitting = document.querySelector('.splitting-containers')
-        // setTimeout(() => {
-        //     splitting.style.display = "grid"
-        // }, 1000)
-
-        // setTimeout(() => {
-        //     let left = document.querySelector('.left-container')
-        //     let right = document.querySelector('.right-container')
-        //     left.style.animation = "exiting_through_far_left 3s"
-        //     right.style.animation = "exiting_through_far_right 3s"
-        //     left.style.transform = "translateX(1000%)"
-        //     right.style.transform = "translateX(-1000%)"
-        // }, 2000)
 
         setTimeout(() => {
-            // splitting.style.display = "none"
             history.push('./about')
         }, 1500)
     }

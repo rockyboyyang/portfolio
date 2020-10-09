@@ -1,9 +1,7 @@
-import React, { useState, useContext } from 'react';
-import { useHistory } from "react-router-dom";
-import { AppContext } from '../context/AppContext'
+import React from 'react';
 
 const Skill = ({ skill, percentage }) => {
-    const { currentPage, setCurrentPage, openedPortfolio, setOpenedPortfolio } = useContext(AppContext)
+
     return (
         <div className={`skill-div`}>
             <div className="skill-name-div">

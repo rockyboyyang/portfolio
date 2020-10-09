@@ -1,6 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { BrowserRouter, Route, Switch, useHistory, Redirect } from "react-router-dom";
-import { AppContext } from '../../context/AppContext'
+import React, { useEffect } from 'react';
 import Navbar from '../Navbar'
 import Skill from '../Skill'
 import Footer from '../Footer'
@@ -11,16 +9,9 @@ import carlVideo from '../../assets/videos/carl.mp4'
 import swipefairVideo from '../../assets/videos/swipefair.mp4'
 
 const About = () => {
-    let history = useHistory()
-    const { currentPage, setCurrentPage, openedPortfolio, setOpenedPortfolio } = useContext(AppContext)
 
     useEffect(() => {
-
-        // element.style.display = "none"
         let splitting = document.querySelector('.splitting-containers')
-        // setTimeout(() => {
-        //     splitting.style.display = "grid"
-        // }, 1000)
 
         setTimeout(() => {
             let left = document.querySelector('.left-container')

@@ -1,6 +1,4 @@
-import React, { useState, useContext } from 'react';
-import { useHistory } from "react-router-dom";
-import { AppContext } from '../context/AppContext'
+import React from 'react';
 
 const Footer = () => {
     return (

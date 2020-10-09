@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { BrowserRouter, Route, Switch, useHistory, Redirect } from "react-router-dom";
+import React, {  useEffect, useContext } from 'react';
 import { AppContext } from '../context/AppContext'
 
 const Navbar = () => {
-    let history = useHistory()
-    const {  currentPage, setCurrentPage, openedPortfolio, setOpenedPortfolio  } = useContext(AppContext)
+    const {  currentPage } = useContext(AppContext)
 
     useEffect(() => {
         
@@ -14,7 +12,6 @@ const Navbar = () => {
         let id = e.target.id;
         if(currentPage === id.slice(0, id.length - 4)) return
 
-        let bodyDiv = document.querySelector('.middle-body')
         
         if (id === 'about-tab') {
             let elmnt = document.querySelector('.about-middle');
@@ -24,7 +21,10 @@ const Navbar = () => {
         }
 
         if(id === 'skills-tab') {
-
+            let elmnt = document.querySelector('.skills-outer-container');
+            elmnt.scrollIntoView({
+                behavior: 'smooth'
+            });
         }
 
         if (id === 'projects-tab') {
@@ -34,11 +34,12 @@ const Navbar = () => {
             });
         }
 
-        setTimeout(() => {
-            if (id === 'about-tab') history.push('./about')
-            if (id === 'skills-tab') history.push('./about')
-            if (id === 'projects-tab') history.push('./projects')
-        }, 2000)
+        if (id === 'contact-tab') {
+            let elmnt = document.querySelector('.contact-body');
+            elmnt.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     }
 
     return (

@@ -6,7 +6,7 @@
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     display: grid;
     grid-template-columns: 1fr 3fr 6fr;
-    box-shadow: 0 2px 12px 0 rgba(255, 255, 255, 0.16);
+    box-shadow: 0 4px 12px 0 rgb(0, 0, 0);
     transform: translateX(100%);
     position: absolute;
     z-index: 1;

@@ -15,20 +15,23 @@ const Navbar = () => {
         if(currentPage === id.slice(0, id.length - 4)) return
 
         let bodyDiv = document.querySelector('.middle-body')
-
-        if (currentPage === 'about') {
-
-        }
-
-        if (currentPage === 'skills') {
-            
-        }
         
         if (id === 'about-tab') {
+            let elmnt = document.querySelector('.about-middle');
+            elmnt.scrollIntoView({
+                behavior: 'smooth'
+            });
         }
 
         if(id === 'skills-tab') {
 
+        }
+
+        if (id === 'projects-tab') {
+            let elmnt = document.querySelector('.projects-middle');
+            elmnt.scrollIntoView({
+                behavior: 'smooth'
+            });
         }
 
         setTimeout(() => {

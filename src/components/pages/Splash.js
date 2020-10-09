@@ -9,7 +9,8 @@ const Splash = () => {
     useEffect(() => {
         setTimeout(() => {
             let button = document.querySelector('.go-to-home-button')
-            button.className += " transition-fade-in"
+            if(button) button.className += " transition-fade-in"
+            else return
         }, 6500)
     }, [])
 

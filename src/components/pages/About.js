@@ -40,31 +40,44 @@ const About = () => {
             splitting.style.display = "none"
         }, 2000)
 
-        // setCurrentPage('about')
-        // let pictureContainer = document.querySelector('.picture-container')
-        // pictureContainer.style.animation = "entering_from_bottom 1s"
-        // pictureContainer.style.transform = "translateY(0%)"
-
-        // let descriptionContainer = document.querySelector('.description-outer-container')
-        // descriptionContainer.style.animation = "entering_from_top 1s"
-        // descriptionContainer.style.transform = "translateY(0%)"
-
-        // let descriptionAndPictureContainer = document.querySelector('.picture-description-container')
-        // descriptionAndPictureContainer.style.animation = "entering_from_right 1s"
-        // descriptionAndPictureContainer.style.transform = "translateX(0%)"
-
-        // let header = document.querySelector('.about-middle')
-        // header.style.animation = "entering_from_left 1s"
-        // header.style.transform = "translateX(0%)"
-
-        // let footer = document.querySelector('.footer')
-        // if(openedPortfolio === false) {
-        //     footer.style.animation = "entering_from_left 1s"
-        // }
-        // footer.style.transform = "translateX(0%)"
-        // setOpenedPortfolio(true)
-
     }, [])
+
+    const redirectToSite = (e) => {
+        e.preventDefault()
+        let website = e.target.id
+
+        if(website === "chesslive") {
+            window.open("https://powerful-mountain-20313.herokuapp.com/", '_blank')
+        }
+
+        if(website === "chessrepo") {
+            window.open("https://github.com/rockyboyyang/chess", '_blank')
+        }
+
+        if (website === "pokechampionslive") {
+            window.open("https://pokechampions.herokuapp.com/l", '_blank')
+        }
+
+        if (website === "pokechampionsrepo") {
+            window.open("https://github.com/rockyboyyang/Pokechampions-FrontEnd", '_blank')
+        }
+
+        if (website === "carllive") {
+            window.open("https://hidden-fortress-08833.herokuapp.com/", '_blank')
+        }
+
+        if (website === "carlrepo") {
+            window.open("https://github.com/ColeRutledge/Asana-Clone", '_blank')
+        }
+
+        if (website === "swipefairlive") {
+            window.open("https://swipefair.herokuapp.com/", '_blank')
+        }
+
+        if (website === "swipefairrepo") {
+            window.open("https://github.com/rockyboyyang/swipefair-frontend", '_blank')
+        }
+    }
 
 
     return (
@@ -142,8 +155,8 @@ const About = () => {
                                     <h4 className="project-summary">Chess is a two-player strategy board game that is played on an 8 x 8 checker-patterned game-board with 64 total squares.</h4>
                                     <h4>JavaScript, React, HTML, CSS,  Express, Websockets</h4>
                                     <div className="live-github-button">
-                                        <div className="live-button button">Live</div>
-                                        <div className="github-button button">GitHub</div>
+                                        <div className="live-button button" onClick={redirectToSite} id="chesslive">Live</div>
+                                        <div className="github-button button" onClick={redirectToSite} id="chessrepo">GitHub</div>
                                     </div>
                                 </div>
                             </div>
@@ -156,8 +169,8 @@ const About = () => {
                                     <h4 className="project-summary">An application that allows the user to take on the Kanto League in the world of Pokemon.  Select six of your favorite Pokemon, and challenge the pokemon League and see if you can become the new Champion!</h4>
                                     <h4>JavaScript, React, HTML, CSS,  Python, Flask, SQLAlchemy, PSQL, Postgres</h4>
                                     <div className="live-github-button">
-                                        <div className="live-button button">Live</div>
-                                        <div className="github-button button">GitHub</div>
+                                        <div className="live-button button" onClick={redirectToSite} id="pokechampionslive">Live</div>
+                                        <div className="github-button button" onClick={redirectToSite} id="pokechampionsrepo">GitHub</div>
                                     </div>
                                 </div>
                             </div>
@@ -176,8 +189,8 @@ const About = () => {
                                     <h4 className="project-summary">CARL is a work-flow application to help users organize their tasks.  Tasks can be assigned to specific projects where they can be organized into categories.</h4>
                                     <h4>JavaScript, React, HTML, CSS, PostgreSQL, Sequelize, Express, PUG, TDD</h4>
                                     <div className="live-github-button">
-                                        <div className="live-button button">Live</div>
-                                        <div className="github-button button">GitHub</div>
+                                        <div className="live-button button" onClick={redirectToSite} id="carllive">Live</div>
+                                        <div className="github-button button" onClick={redirectToSite} id="carlrepo">GitHub</div>
                                     </div>
                                 </div>
                             </div>
@@ -190,8 +203,8 @@ const About = () => {
                                     <h4 className="project-summary"> An application that combines the concepts of Tinder and LinkedIn. By being able to swipe whether you’re a company looking to hire or a jobseeker and will connect a jobseeker with a company when both swiped each other</h4>
                                     <h4>JavaScript, React, HTML, CSS,  Python, Flask, SQLAlchemy, PSQL, Postgres</h4>
                                     <div className="live-github-button">
-                                        <div className="live-button button">Live</div>
-                                        <div className="github-button button">GitHub</div>
+                                        <div className="live-button button" onClick={redirectToSite} id="swipefairlive">Live</div>
+                                        <div className="github-button button" onClick={redirectToSite} id="swipefairrepo">GitHub</div>
                                     </div>
                                 </div>
                             </div>

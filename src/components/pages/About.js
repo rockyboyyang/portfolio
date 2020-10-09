@@ -15,38 +15,64 @@ const About = () => {
     const { currentPage, setCurrentPage, openedPortfolio, setOpenedPortfolio } = useContext(AppContext)
 
     useEffect(() => {
-        setCurrentPage('about')
-        let pictureContainer = document.querySelector('.picture-container')
-        pictureContainer.style.animation = "entering_from_bottom 1s"
-        pictureContainer.style.transform = "translateY(0%)"
 
-        let descriptionContainer = document.querySelector('.description-outer-container')
-        descriptionContainer.style.animation = "entering_from_top 1s"
-        descriptionContainer.style.transform = "translateY(0%)"
+        // element.style.display = "none"
+        let splitting = document.querySelector('.splitting-containers')
+        // setTimeout(() => {
+        //     splitting.style.display = "grid"
+        // }, 1000)
 
-        let descriptionAndPictureContainer = document.querySelector('.picture-description-container')
-        descriptionAndPictureContainer.style.animation = "entering_from_right 1s"
-        descriptionAndPictureContainer.style.transform = "translateX(0%)"
+        setTimeout(() => {
+            let left = document.querySelector('.left-container')
+            let right = document.querySelector('.right-container')
+            left.style.animation = "exiting_through_far_left 6s"
+            right.style.animation = "exiting_through_far_right 6s"
+            left.style.transform = "translateX(1000%)"
+            right.style.transform = "translateX(-1000%)"
+        }, 1000)
 
-        let header = document.querySelector('.about-middle')
-        header.style.animation = "entering_from_left 1s"
-        header.style.transform = "translateX(0%)"
-
-        let navbar = document.querySelector('.navbar')
-        let footer = document.querySelector('.footer')
-        if(openedPortfolio === false) {
+         setTimeout(() => {
+            let navbar = document.querySelector('.navbar')
             navbar.style.animation = "entering_from_right 1s"
-            footer.style.animation = "entering_from_left 1s"
-        }
-        navbar.style.transform = "translateX(0%)"
-        footer.style.transform = "translateX(0%)"
-        setOpenedPortfolio(true)
+            navbar.style.transform = "translateX(0%)"
+            let blurred = document.querySelector('.unblurred-text')
+            blurred.className += " transition-fade-in"
+            splitting.style.display = "none"
+        }, 2000)
+
+        // setCurrentPage('about')
+        // let pictureContainer = document.querySelector('.picture-container')
+        // pictureContainer.style.animation = "entering_from_bottom 1s"
+        // pictureContainer.style.transform = "translateY(0%)"
+
+        // let descriptionContainer = document.querySelector('.description-outer-container')
+        // descriptionContainer.style.animation = "entering_from_top 1s"
+        // descriptionContainer.style.transform = "translateY(0%)"
+
+        // let descriptionAndPictureContainer = document.querySelector('.picture-description-container')
+        // descriptionAndPictureContainer.style.animation = "entering_from_right 1s"
+        // descriptionAndPictureContainer.style.transform = "translateX(0%)"
+
+        // let header = document.querySelector('.about-middle')
+        // header.style.animation = "entering_from_left 1s"
+        // header.style.transform = "translateX(0%)"
+
+        // let footer = document.querySelector('.footer')
+        // if(openedPortfolio === false) {
+        //     footer.style.animation = "entering_from_left 1s"
+        // }
+        // footer.style.transform = "translateX(0%)"
+        // setOpenedPortfolio(true)
 
     }, [])
 
 
     return (
         <div className="about-page main-body">
+            <div className="splitting-containers">
+                <div className="left-container"></div>
+                <div className="right-container"></div>
+            </div>
             <Navbar />
             <div className="middle-body about-middle-body">
                 <div className="home-page-header-container">
@@ -113,7 +139,7 @@ const About = () => {
                             <div className="project-description-container">
                                 <div className="project-description">
                                     <h1>Chess</h1>
-                                    <h4>Chess is a two-player strategy board game that is played on an 8 x 8 checker-patterned game-board with 64 total squares.</h4>
+                                    <h4 className="project-summary">Chess is a two-player strategy board game that is played on an 8 x 8 checker-patterned game-board with 64 total squares.</h4>
                                     <h4>JavaScript, React, HTML, CSS,  Express, Websockets</h4>
                                     <div className="live-github-button">
                                         <div className="live-button button">Live</div>
@@ -127,7 +153,7 @@ const About = () => {
                             <div className="project-description-container">
                                 <div className="project-description">
                                     <h1>Pokechampions</h1>
-                                    <h4>An application that allows the user to take on the Kanto League in the world of Pokemon.  Select six of your favorite Pokemon, and challenge the pokemon League and see if you can become the new Champion!</h4>
+                                    <h4 className="project-summary">An application that allows the user to take on the Kanto League in the world of Pokemon.  Select six of your favorite Pokemon, and challenge the pokemon League and see if you can become the new Champion!</h4>
                                     <h4>JavaScript, React, HTML, CSS,  Python, Flask, SQLAlchemy, PSQL, Postgres</h4>
                                     <div className="live-github-button">
                                         <div className="live-button button">Live</div>
@@ -147,7 +173,7 @@ const About = () => {
                             <div className="project-description-container">
                                 <div className="project-description">
                                     <h1>C.A.R.L.</h1>
-                                    <h4>CARL is a work-flow application to help users organize their tasks.  Tasks can be assigned to specific projects where they can be organized into categories.</h4>
+                                    <h4 className="project-summary">CARL is a work-flow application to help users organize their tasks.  Tasks can be assigned to specific projects where they can be organized into categories.</h4>
                                     <h4>JavaScript, React, HTML, CSS, PostgreSQL, Sequelize, Express, PUG, TDD</h4>
                                     <div className="live-github-button">
                                         <div className="live-button button">Live</div>
@@ -161,7 +187,7 @@ const About = () => {
                             <div className="project-description-container">
                                 <div className="project-description">
                                     <h1>Swipefair</h1>
-                                    <h4> An application that combines the concepts of Tinder and LinkedIn. By being able to swipe whether you’re a company looking to hire or a jobseeker and will connect a jobseeker with a company when both swiped each other</h4>
+                                    <h4 className="project-summary"> An application that combines the concepts of Tinder and LinkedIn. By being able to swipe whether you’re a company looking to hire or a jobseeker and will connect a jobseeker with a company when both swiped each other</h4>
                                     <h4>JavaScript, React, HTML, CSS,  Python, Flask, SQLAlchemy, PSQL, Postgres</h4>
                                     <div className="live-github-button">
                                         <div className="live-button button">Live</div>
@@ -177,7 +203,9 @@ const About = () => {
                 </div>
             </div>
             <div className="contact-body">
-                
+                <h1>Want to contact me?</h1>
+                <h4>Email: yangrocky2013@gmail.com</h4>
+                <h4>Phone: 1-612-396-5953</h4>
             </div>
             <Footer />
         </div>

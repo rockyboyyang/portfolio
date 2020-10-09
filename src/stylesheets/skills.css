@@ -1,67 +1,4 @@
 
-/* .skills-middle-body {
-    display: grid;
-    grid-template-rows: 1fr 7fr;
-    width: 100%;
-    height: 100%;
-    background-color: #b8c6db;
-} */
-
-/* .skills-middle {
-    color: #a4508b;
-    transform: translateX(100%);
-} */
-
-/* .skills-outer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-} */
-
-/* .skills-inner-container {
-    height: 75%;
-    width: 75%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-} */
-
-/* .skills-inner-container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 100%;
-    max-width: 100%;
-} */
-
-/* .underline-skills {
-    width: 4.5%;
-    border: #a4508b 1px solid;
-} */
-
-/* .css-logo-container,
-.express-logo-container,
-.flask-logo-container,
-.heroku-logo-container,
-.html-logo-container,
-.sequelize-logo-container {
-    transform: translateX(-1000%);
-} */
-
-/* .javascript-logo-container,
-.mysql-logo-container,
-.postgresql-logo-container,
-.python-logo-container,
-.react-logo-container {
-    transform: translateX(1000%);
-} */
-
-/* .skills-inner-container img {
-    height: 75%;
-    width: 65%;
-} */
 
 .skills-description-container {
     width: 100%;
@@ -205,4 +142,9 @@
     /* background-color: red; */
     height: 80%;
     width: 50%;
+}
+
+.information-container > span {
+    color: rgba(0, 0, 0, 0.393);
+
 }

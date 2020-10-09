@@ -46,7 +46,7 @@ const About = () => {
         }
 
         if (website === "pokechampionslive") {
-            window.open("https://pokechampions.herokuapp.com/l", '_blank')
+            window.open("https://pokechampions.herokuapp.com/", '_blank')
         }
 
         if (website === "pokechampionsrepo") {

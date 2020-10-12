@@ -136,23 +136,6 @@ const About = () => {
                         <div className="underline-project"></div>
                     </div>
                     <div className="projects-body">
-                        <div className="chess-tab project-tab-left project-tab">
-                            <div className="project-video">
-                                <video src={chessVideo} autoplay="true" loop="true"></video>
-                            </div>
-                            <div className="project-description-container">
-                                <div className="project-description">
-                                    <h1>Chess</h1>
-                                    <h4 className="project-summary">Chess is a two-player strategy board game that is played on an 8 x 8 checker-patterned game-board with 64 total squares.</h4>
-                                    <h4>JavaScript, React, HTML, CSS,  Express, Websockets</h4>
-                                    <div className="live-github-button">
-                                        <div className="live-button button" onClick={redirectToSite} id="chesslive">Live</div>
-                                        <div className="github-button button" onClick={redirectToSite} id="chessrepo">GitHub</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="break-div"></div>
                         <div className="pokechampions-tab project-tab-right project-tab">
                             <div className="project-description-container">
                                 <div className="project-description">
@@ -201,6 +184,23 @@ const About = () => {
                             </div>
                             <div className="project-video">
                                 <video src={swipefairVideo} autoplay="true" loop="true"></video>
+                            </div>
+                        </div>
+                        <div className="break-div"></div>
+                        <div className="chess-tab project-tab-left project-tab">
+                            <div className="project-video">
+                                <video src={chessVideo} autoplay="true" loop="true"></video>
+                            </div>
+                            <div className="project-description-container">
+                                <div className="project-description">
+                                    <h1>Chess</h1>
+                                    <h4 className="project-summary">Chess is a two-player strategy board game that is played on an 8 x 8 checker-patterned game-board with 64 total squares.</h4>
+                                    <h4>JavaScript, React, HTML, CSS,  Express, Websockets</h4>
+                                    <div className="live-github-button">
+                                        <div className="live-button button" onClick={redirectToSite} id="chesslive">Live</div>
+                                        <div className="github-button button" onClick={redirectToSite} id="chessrepo">GitHub</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

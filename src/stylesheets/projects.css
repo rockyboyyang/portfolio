@@ -39,25 +39,25 @@
 .chess-tab {
     height: 100%;
     width: 100%;
-    grid-row: 1;
+    grid-row: 7;
 }
 
 .pokechampions-tab {
     height: 100%;
     width: 100%;
-    grid-row: 3;
+    grid-row: 1;
 }
 
 .carl-tab {
     height: 100%;
     width: 100%;
-    grid-row: 5;
+    grid-row: 3;
 }
 
 .swipefair-tab {
     height: 100%;
     width: 100%;
-    grid-row: 7;
+    grid-row: 5;
 
 }
 

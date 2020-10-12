@@ -6,9 +6,7 @@ const Splash = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            let button = document.querySelector('.go-to-home-button')
-            if(button) button.className += " transition-fade-in"
-            else return
+            transition()
         }, 6500)
     }, [])
 
@@ -18,7 +16,7 @@ const Splash = () => {
 
         setTimeout(() => {
             history.push('./about')
-        }, 1500)
+        }, 1000)
     }
 
     return (
@@ -26,7 +24,6 @@ const Splash = () => {
             <div className="introduction-container">
                 <p className="introduction-sentence first-line">Hello, my name is Rocky Yang</p>
                 <p className="introduction-sentence second-line">Please take a look at my portfolio!</p>
-                <div className="go-to-home-button" onClick={transition}><p>Portfolio</p></div>
             </div>
         </div>
     );

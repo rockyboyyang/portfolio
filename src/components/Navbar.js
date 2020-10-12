@@ -1,6 +1,6 @@
 import React, {  useEffect, useContext } from 'react';
 import { AppContext } from '../context/AppContext'
-import resume from '../assets/documents/yang_rocky_resume.pdf'
+// import resume from '../assets/documents/yang_rocky_resume.pdf'
 
 const Navbar = () => {
     const {  currentPage } = useContext(AppContext)

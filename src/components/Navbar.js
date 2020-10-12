@@ -42,9 +42,9 @@ const Navbar = () => {
             });
         }
 
-        if (id === 'resume-tab') {
-            window.open(resume, '_blank')
-        }
+        // if (id === 'resume-tab') {
+        //     window.open(resume, '_blank')
+        // }
     }
 
     return (
@@ -54,7 +54,7 @@ const Navbar = () => {
                 <p className="tabs" onClick={redirect} id="skills-tab">Skills</p>
                 <p className="tabs" onClick={redirect} id="projects-tab">Projects</p>
                 <p className="tabs" onClick={redirect} id="contact-tab">Contact Me</p>
-                <p className="tabs" onClick={redirect} id="resume-tab">Resume</p>
+                {/* <p className="tabs" onClick={redirect} id="resume-tab">Resume</p> */}
             </div>
             <div className="name-tab">
                 <h1 className="name-header">Rocky Yang</h1>

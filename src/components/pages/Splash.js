@@ -22,7 +22,7 @@ const Splash = () => {
     return (
         <div className="splash-page css-typing">
             <div className="introduction-container">
-                <p className="introduction-sentence first-line">Hello, my name is Rocky Yang</p>
+                <p className="introduction-sentence first-line">Hello, my name is Rocky Yan</p>
                 <p className="introduction-sentence second-line">Please take a look at my portfolio!</p>
             </div>
         </div>

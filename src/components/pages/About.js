@@ -9,7 +9,6 @@ import carlVideo from '../../assets/videos/carl.mp4'
 import swipefairVideo from '../../assets/videos/swipefair.mp4'
 
 const About = () => {
-
     useEffect(() => {
         let splitting = document.querySelector('.splitting-containers')
 

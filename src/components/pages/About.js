@@ -117,10 +117,10 @@ const About = () => {
                     <div className="skills-outer-container">
                         <h2>Skills</h2>
                         <div className="skills-inner-container">
-                            <Skill skill="JavaScript" percentage={85}/>
+                            <Skill skill="JavaScript" percentage={90}/>
                             <Skill skill="CSS" percentage={80}/>
                             <Skill skill="HTML" percentage={80}/>
-                            <Skill skill="Python" percentage={65}/>
+                            <Skill skill="Python" percentage={75}/>
                             <Skill skill="React" percentage={80}/>
                             <Skill skill="Git" percentage={80}/>
                             <Skill skill="Flask" percentage={70}/>

@@ -1,0 +1,49 @@
+.education-div-container {
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    color: #b8c6db;
+    box-shadow: 0 2px 12px 0 rgb(0, 0, 0);
+}
+
+.education-header {
+    color: #b8c6db;
+}
+
+.education-middle {
+    width: 100%;
+    height: 150px;
+}
+
+.education-body {
+    width: 100%;
+    height: 350px;
+}
+
+.education-description {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.school-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin: 50px;
+}
+
+.school-name > * {
+    margin: 5px;
+}
+
+.school-name > h1 {
+}
+
+.school-name > h4 {
+    color: #b8c6db64;
+}
+
+.school-image {
+    margin: 50px;
+
+}

@@ -207,7 +207,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="experience-div-container">
-                    <div className="middle-body-header">
+                    <div className="middle-body-header experience-middle">
                         <h1>Experience</h1>
                         <div className="underline-project"></div>
                     </div>
@@ -220,6 +220,26 @@ const About = () => {
                                 <h4 className="tasks-summary">- Conduct technical screens of coding bootcamp applicants and assessed algorithmic aptitude in various languages, including JavaScript, Ruby, and Python.</h4>
                             </div>
                             <div className="company-image">
+                                <img src={aaLogo} id='aaLogo'></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="education-div-container">
+                    <div className="middle-body-header education-middle">
+                        <h1 className="education-header">Education</h1>
+                        <div className="underline-project"></div>
+                    </div>
+                    <div className="education-body">
+                        <div className="education-description">
+                            <div className="school-name">
+                                <h1>App Academy</h1>
+                                <h2>Fullstack Web Development Bootcamp</h2>
+                                <h4>March 2020 - September 2020</h4>
+                                <h4 className="tasks-summary">- Rigorous 1800-hour software development course with less than 3% acceptance rate.</h4>
+                                <h4 className="tasks-summary">- Teaches full-stack web development: Test Driven Development, Pair Programming, Algorithms, Design Patterns, Redux, Docker, Web Sockets, Presentation Skills, Software Engineering, Software Development, Coding, and Data Structures.</h4>
+                            </div>
+                            <div className="school-image">
                                 <img src={aaLogo} id='aaLogo'></img>
                             </div>
                         </div>

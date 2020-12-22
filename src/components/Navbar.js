@@ -35,6 +35,20 @@ const Navbar = () => {
             });
         }
 
+        if (id === 'experience-tab') {
+            let elmnt = document.querySelector('.experience-middle');
+            elmnt.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        if (id === 'education-tab') {
+            let elmnt = document.querySelector('.education-middle');
+            elmnt.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
         if (id === 'contact-tab') {
             let elmnt = document.querySelector('.contact-body');
             elmnt.scrollIntoView({
@@ -53,6 +67,8 @@ const Navbar = () => {
                 <p className="tabs" onClick={redirect} id="about-tab">About</p>
                 <p className="tabs" onClick={redirect} id="skills-tab">Skills</p>
                 <p className="tabs" onClick={redirect} id="projects-tab">Projects</p>
+                <p className="tabs" onClick={redirect} id="experience-tab">Experience</p>
+                <p className="tabs" onClick={redirect} id="education-tab">Education</p>
                 <p className="tabs" onClick={redirect} id="contact-tab">Contact Me</p>
                 <p className="tabs" onClick={redirect} id="resume-tab">Resume</p>
             </div>

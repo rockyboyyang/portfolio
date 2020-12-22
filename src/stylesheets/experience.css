@@ -4,6 +4,15 @@
     height: 350px;
 }
 
+.experience-middle {
+    width: 100%;
+    height: 150px;
+}
+
+.experience-div-container .underline-project {
+    border: #485461 1px solid;
+}
+
 .experience-description {
     display: grid;
     grid-template-columns: 3fr 1fr;

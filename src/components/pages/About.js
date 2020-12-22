@@ -3,6 +3,7 @@ import Navbar from '../Navbar'
 import Skill from '../Skill'
 import Footer from '../Footer'
 import profilePic from '../../assets/images/profile-pic2.jpg'
+import aaLogo from '../../assets/images/appacademy.png'
 import chessVideo from '../../assets/videos/chess.mp4'
 import pokechampionsVideo from '../../assets/videos/pokechampions.mp4'
 import carlVideo from '../../assets/videos/carl.mp4'
@@ -102,7 +103,7 @@ const About = () => {
                     <div className='description-outer-container'>
                         <div className='description-inner-container'>
                             <h2>Who am I?</h2>
-                            <p id="description-text">I’m a passionate software developer with the innovative and creative mindset of an entrepreneur. I am always looking forward to any challenge. I'm an enthusiastic teammate and always bring a positive atmosphere wherever I go. I am forward-thinking, and I love creating new ideas to showcase my skillset. Programming has been my outlet for problem-solving and creative expression. Languages that I love are Javascript and Python. I also have great experience working in jsNode, React, SQL, SQLAlchemy, Postgresql, Flask, HTML5, CSS3, Express, and Git. When my programming cape is off, I like to play video games and spend time with friends and family.</p>
+                            <p id="description-text">I’m a passionate software developer with the innovative and creative mindset of an entrepreneur. I am always looking forward to any challenge. I'm an enthusiastic teammate and always bring a positive atmosphere wherever I go. I am forward-thinking, and I love creating new ideas to showcase my skillset. Programming has been my outlet for problem-solving and creative expression. Languages that I love are Javascript and Python. I also have great experience working in Node.js, React, SQL, SQLAlchemy, PostgreSQL, Flask, HTML5, CSS3, Express, and Git. When my programming cape is off, I like to jam on my piano, play sports, and hang out with friends and family. I am currently working part-time as a Software Engineer Apprentice at App Academy.</p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +121,8 @@ const About = () => {
                             <Skill skill="JavaScript" percentage={90}/>
                             <Skill skill="CSS" percentage={80}/>
                             <Skill skill="HTML" percentage={80}/>
-                            <Skill skill="Python" percentage={75}/>
+                            <Skill skill="Python" percentage={75} />
+                            <Skill skill="Ruby" percentage={60} />
                             <Skill skill="React" percentage={80}/>
                             <Skill skill="Git" percentage={80}/>
                             <Skill skill="Flask" percentage={70}/>
@@ -200,6 +202,25 @@ const About = () => {
                                         <div className="github-button button" onClick={redirectToSite} id="chessrepo">GitHub</div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="experience-div-container">
+                    <div className="middle-body-header">
+                        <h1>Experience</h1>
+                        <div className="underline-project"></div>
+                    </div>
+                    <div className="experience-body">
+                        <div className="experience-description">
+                            <div className="company-name">
+                                <h1>Software Engineer Apprentice</h1>
+                                <h2>App Academy</h2>
+                                <h4>December 2020 - Present</h4>
+                                <h4 className="tasks-summary">- Conduct technical screens of coding bootcamp applicants and assessed algorithmic aptitude in various languages, including JavaScript, Ruby, and Python.</h4>
+                            </div>
+                            <div className="company-image">
+                                <img src={aaLogo} id='aaLogo'></img>
                             </div>
                         </div>
                     </div>

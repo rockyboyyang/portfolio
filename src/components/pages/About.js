@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { AppContext } from '../context/AppContext'
+import { AppContext } from '../../context/AppContext'
 import Navbar from '../Navbar'
 import Skill from '../Skill'
 import Footer from '../Footer'

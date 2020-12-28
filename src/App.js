@@ -15,13 +15,13 @@ const App = () => {
     ReactGA.pageview('/about');
   }
 
-  useEffect(() => {
-    initializeReactGA()
-  }, [])
+  // useEffect(() => {
+  //   initializeReactGA()
+  // }, [])
 
   return (
     <BrowserRouter>
-      <AppContext.Provider value={{ currentPage, setCurrentPage, openedPortfolio, setOpenedPortfolio}}>
+      <AppContext.Provider value={{ currentPage, setCurrentPage, openedPortfolio, setOpenedPortfolio, initializeReactGA}}>
         <Switch>
         <Route exact path="/" render={(props) => <Splash />} />
         <Route path="/about" render={(props) => <About />} />

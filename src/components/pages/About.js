@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { AppContext } from '../context/AppContext'
 import Navbar from '../Navbar'
 import Skill from '../Skill'
 import Footer from '../Footer'
@@ -10,6 +11,8 @@ import carlVideo from '../../assets/videos/carl.mp4'
 import swipefairVideo from '../../assets/videos/swipefair.mp4'
 
 const About = () => {
+    const { initializeReactGA } = useContext(AppContext)
+
     useEffect(() => {
         let splitting = document.querySelector('.splitting-containers')
 
@@ -30,7 +33,7 @@ const About = () => {
             blurred.className += " transition-fade-in"
             splitting.style.display = "none"
         }, 2000)
-
+        initializeReactGA()
     }, [])
 
     const redirectToSite = (e) => {

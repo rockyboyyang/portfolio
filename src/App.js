@@ -12,7 +12,7 @@ const App = () => {
 
   function initializeReactGA() {
     ReactGA.initialize('UA-123791717-1');
-    ReactGA.pageview('/homepage');
+    ReactGA.pageview('/about');
   }
 
   useEffect(() => {

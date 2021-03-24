@@ -57,11 +57,12 @@ const About = () => {
         }
 
         if (website === "carllive") {
-            window.open("https://hidden-fortress-08833.herokuapp.com/", '_blank')
+            // window.open("https://hidden-fortress-08833.herokuapp.com/", '_blank')
+            alert("Carl website isn't functioning correctly, please see repo for instructions")
         }
 
         if (website === "carlrepo") {
-            window.open("https://github.com/ColeRutledge/Asana-Clone", '_blank')
+            window.open("https://github.com/rockyboyyang/Asana-Clone", '_blank')
         }
 
         if (website === "swipefairlive") {

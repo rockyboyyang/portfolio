@@ -61,7 +61,7 @@ const About = () => {
         }
 
         if (website === "carlrepo") {
-            window.open("https://github.com/rockyboyyang/Asana-Clone", '_blank')
+            window.open("https://github.com/ColeRutledge/Asana-Clone", '_blank')
         }
 
         if (website === "swipefairlive") {

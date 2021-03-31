@@ -57,8 +57,7 @@ const About = () => {
         }
 
         if (website === "carllive") {
-            // window.open("https://hidden-fortress-08833.herokuapp.com/", '_blank')
-            alert("Carl website isn't functioning correctly, please see repo for instructions")
+            window.open("https://asana-clone-aa.herokuapp.com/", '_blank')
         }
 
         if (website === "carlrepo") {
